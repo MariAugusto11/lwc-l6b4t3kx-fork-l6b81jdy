@@ -1,0 +1,42 @@
+<template>
+	<lightning-card>
+		<div class="slds-m-around_medium" if:true={visible}>
+			<h1 class='slds-text-heading_large'>
+				Trazer dados da Classe
+			</h1><br>
+			<p> Nome: {nome} </p>
+			<p> Tefefone:{telefone} </p>
+			<p> CPF: {cpf} </p>
+			<p> Idade: {idade} </p>
+		</div>
+
+		<div class="slds-m-around_medium" if:false={visible}>
+			<h1 class='slds-text-heading_large'>
+				Outros dados
+			</h1><br>
+			<p> E-mail: {email} </p>
+			<p> Instagram: </p>
+			<a href={instagram} target="_blank"> clique aqui </a>
+			<p> LinkedIn: </p>
+			<a href={linkedin} target="_blank"> clique aqui </a>
+		</div>
+		<!-- Brand variant: Identifies the primary action in a group of buttons -->
+		<lightning-button variant="brand" label="Trocar div" title="Alterar visible" onclick={trocarDiv}
+			class="slds-m-left_x-small"></lightning-button>
+
+		<lightning-button variant="brand" label="Altera Valores" title="Alterar valor" onclick={alterarValores}
+			class="slds-m-left_x-small"></lightning-button>
+	</lightning-card>
+</template>
+<!--Trazer dados de uma classe que será inserida.
+	Nome:
+	Telefone:
+	CPF:
+	Idade:
+-->
+<!-- DIV
+H1 OUTROS DADOS
+E-mail:
+Instagram
+LinkedIn
+ -->

@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/mariaugusto11.lwc-l6b4t3kx-fork-l6b81jdy",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve 10V6mzPfYkiNxqrzrZ8v --open"
+  }
+}
